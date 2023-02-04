@@ -25,10 +25,18 @@ body {
   text-align-last: center;
 }
 
-.text-introduction, .contact-title {
+.text-introduction {
   color: black;
   font-size: 35px;
   font-weight: bolder;
+  text-align: center;
+}
+
+.contact-title {
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .img-jumbo, .img-reservation, .img-contact {
@@ -83,6 +91,7 @@ body {
   width: 140px;
   font-weight: bolder;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .label {
@@ -133,6 +142,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  #root > div.contact-sec > div > div.react-datepicker-wrapper > div > input {
+    margin: 0px;    
+  }
+
   .introduction, .contact-sec {
     flex-direction: column-reverse;
   }
