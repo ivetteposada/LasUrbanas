@@ -1,0 +1,160 @@
+body {  
+  background-color: black !important;
+}
+
+.nav-link {
+  font-size: 25px !important;
+  color: yellow !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.introduction{
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.about {
+  justify-content: space-around;
+  text-align-last: center;
+}
+
+.text-introduction, .contact-title {
+  color: black;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.img-jumbo, .img-reservation, .img-contact {
+  width: 50%;  
+  border-radius: 20px;
+}
+
+.img-reservation {
+  margin-top: 20px;
+}
+
+.contact-sec, .contact-us, .about  {
+  display: flex;
+  border: solid 10px yellow;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.contact-section {
+  text-align-last: center;
+}
+
+.contact-us-section {
+  margin-right: 50px;
+  text-align-last: center;
+}
+
+
+#root > div > div.contact-sec > div > div > div > input[type=text] {
+  margin: 20px;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+.name, .tel, .msj, .email {
+  margin: 20px;
+  border-radius: 6px;
+  width: 100%;
+  padding-left: 10px;  
+  text-align-last: left;
+  height: 50px;
+}
+
+.send {
+  height: 60px;
+  border-radius: 8px;
+  color: black;
+  background-color: yellow;
+  width: 140px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.label {
+  font-size: 20px;
+  color: white;
+}
+
+.data {
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+
+.send:hover {
+  background-color: yellow;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  width: 160px;
+  height: 80px;
+}
+
+.me-auto .navbar-nav {
+  margin-right: 0 !important;
+}
+
+#root > div.contact-sec > div > div.react-datepicker-wrapper > div > input {
+  margin: 20px;
+  border-radius: 6px;
+  width: 100%;
+  padding-left: 10px;  
+  text-align-last: left;
+  height: 50px;
+}
+
+.react-datepicker-wrapper {
+  margin-right: 40px;  
+  border-radius: 6px;
+  margin-bottom: 20px;  
+}
+
+.copyright {
+  margin: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .introduction, .contact-sec {
+    flex-direction: column-reverse;
+  }
+
+  .img-jumbo, .img-reservation {
+    width: 100%;
+  }
+  
+  .contact-us, .about {
+    flex-direction: column;
+  }
+
+  .contact-us-section {
+    margin-right: 0px;
+  }
+
+  .name, .tel, .msj, .email {
+    margin: 20px 0px;
+  }
+
+  #root > div > div.contact-sec > div > div > div > input[type=text] {
+    margin: 20px 0px;
+  }
+}
+
